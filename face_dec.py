@@ -1,8 +1,8 @@
 import cv2
 
 def dec_face():
-    face_cascade = cv2.CascadeClassifier('D:\BaiduNetdiskDownload\haarshare/haarcascade_frontalface_default.xml')
-    eye_cascade = cv2.CascadeClassifier('D:\BaiduNetdiskDownload\haarshare/haarcascade_eye_tree_eyeglasses.xml')
+    face_cascade = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
+    eye_cascade = cv2.CascadeClassifier('./haarcascade_eye_tree_eyeglasses.xml')
     cap = cv2.VideoCapture(0) #调用摄像头
     while(True):
         ret, img = cap.read()
